@@ -1,7 +1,6 @@
-output = 0
-
-with open('1/input.txt', 'r') as myfile:
-    for line in myfile.readlines():
+def getFrequencies(loadFrequencies):
+    output = 0
+    for line in loadFrequencies():
         operator = line[0]
         num = int(line[1:])
 
@@ -9,5 +8,4 @@ with open('1/input.txt', 'r') as myfile:
             output += num
         else:
             output -= num
-
-print(output)
+    return output
