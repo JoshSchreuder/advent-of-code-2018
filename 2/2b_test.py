@@ -7,10 +7,10 @@ def load_main():
         return myfile.read().splitlines()
 
 
-def test_1(self):
+def test_1():
     assert b.similar(
         lambda: ["abcde", "fghij", "klmno", "pqrst", "fguij", "axcye", "wvxyz"]) == "fgij"
 
 
-def test_main_case(self):
+def test_main_case():
     assert b.similar(load_main) == "tjxmoewpdkyaihvrndfluwbzc"

@@ -7,10 +7,10 @@ def load_main():
         return myfile.readlines()
 
 
-def test_1(self):
+def test_1():
     assert a.checksum(lambda: [
         "abcdef", "bababc", "abbcde", "abcccd", "aabcdd", "abcdee", "ababab"]) == 12
 
 
-def test_main_case(self):
+def test_main_case():
     assert a.checksum(load_main) == 7872

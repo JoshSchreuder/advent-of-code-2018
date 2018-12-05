@@ -7,10 +7,10 @@ def load_main():
         return myfile.readlines()
 
 
-def test_1(self):
+def test_1():
     assert a.overlap(
         lambda: ["#1 @ 1,3: 4x4", "#2 @ 3,1: 4x4", "#3 @ 5,5: 2x2"]) == 4
 
 
-def test_main_case(self):
+def test_main_case():
     assert a.overlap(load_main) == 103482

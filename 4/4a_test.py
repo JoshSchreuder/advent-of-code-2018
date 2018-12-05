@@ -7,7 +7,7 @@ def load_main():
         return myfile.read().splitlines()
 
 
-def test_1(self):
+def test_1():
     assert a.asleep(lambda: [
         "[1518-11-01 00:00] Guard #10 begins shift",
         "[1518-11-01 00:05] falls asleep",
@@ -28,5 +28,5 @@ def test_1(self):
         "[1518-11-05 00:55] wakes up"]) == 240
 
 
-def test_main_case(self):
+def test_main_case():
     assert a.asleep(load_main) == 26281
